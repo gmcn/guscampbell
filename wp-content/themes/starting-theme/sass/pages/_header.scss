@@ -1,0 +1,223 @@
+#page {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.fixed {
+  position: fixed;
+  height: 150px;
+  top: 20;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  @include md {
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
+  transition: .5s;
+  .navbar-toggle {
+    border-radius: 0;
+    border: none;
+    background-color: #131e3d;
+    .icon-bar {
+      background-color: #fff !important
+    }
+  }
+}
+
+.navbar-collapse {
+  border-top: none !important;
+  @include xxs {
+    background-color: #fff;
+  }
+  @include md {
+    background-color: transparent;
+  }
+}
+
+.scrolled {
+  @include xxs {
+  background-color: #fff;
+  padding-top: 20px;
+  top: 0;
+  height: 80px;
+  }
+  @include md {
+    height: 140px;
+  }
+
+}
+
+.branding {
+
+  @include xxs {
+    width: 60%;
+    margin-left: 5px;
+    img {
+      max-height: 50px;
+    }
+  }
+  @include sm {
+    width: 30%;
+    margin-left: 5px;
+  }
+  @include md {
+    width: 60%;
+    margin-left: 0;
+    img {
+      max-height: 90px;
+    }
+  }
+  img {
+    @include sm {
+    }
+    @include lg {
+      margin-left: 50px;
+    }
+  }
+}
+
+.tel {
+  a {
+    color: #7d828d;
+  }
+  a:hover {
+    color: #122145;
+    text-decoration: none;
+  }
+  @include sm {
+    display: hidden;
+  }
+  @include md {
+    text-align: right;
+    font-size: 14px;
+    color: #7d828d;
+    margin-top: 50px;
+    padding-right: 50px !important;
+  }
+  span {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.navbar-default {
+    background-color: transparent !important;
+    border-color: transparent !important;
+  @include xs {
+  }
+  @include md {
+  margin-top: 40px;
+  }
+
+}
+
+.navbar-nav {
+   > li {
+     @include md {
+       background: url("images/nav_sep.png") right no-repeat;
+     }
+   }
+   > li:last-of-type {
+     background: none;
+   }
+   > li > a {
+     padding: 10px 20px;
+     @include lg {
+       padding: 10px 30px;
+     }
+    color: $link-color !important;
+    font-weight: bold;
+
+  }
+   > li:hover {
+    border-bottom: 1px solid grey
+  }
+   > li > .dropdown-menu {
+    background-color: $link-color;
+    color: #fff;
+    border-radius: 0;
+  }
+   > li > .dropdown-menu a {
+    color: #fff;
+  }
+   > li > .dropdown-menu a:hover {
+    color: #fff;
+    background-color: $link-color;
+  }
+}
+
+a.openBtn {
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+/* The overlay effect with black background */
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 99999999;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9); /* Black with a little bit see-through */
+  transition: .5s;
+}
+
+/* The content */
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+/* Close button */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+  transition: .5s;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+/* Style the search field */
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+  border-radius: 0;
+}
+
+.overlay input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+.overlay button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.overlay button:hover {
+  background: #bbb;
+}

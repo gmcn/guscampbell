@@ -1,0 +1,250 @@
+.entry-header {
+    @include xxs {
+      padding: 50px 20px 20px 15px;
+      background: #e9eaeb;
+      margin-bottom: 20px;
+    }
+    @include md {
+      padding: 150px 20px 20px 45px;
+    }
+  h1 {
+    font-size: 50px;
+    font-weight: 500;
+  }
+}
+
+.intro-container {
+  margin-bottom: 20px;
+  padding-bottom: 150px;
+  padding-top: 25px;
+  color: #fff;
+  h1 {
+    @include xxs {
+      font-family: $font__main;
+      text-transform: none;
+      margin-top: 0;
+    }
+    @include md {
+      font-size: 45px;
+      margin-left: 25px;
+    }
+    @include lg {
+      font-size: 70px;
+      line-height: 90px;
+      margin-left: 25px;
+    }
+
+  }
+  h2 {
+    font-family: $font__main;
+    text-transform: none;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  p {
+    text-align: justify;
+  }
+}
+
+.pagecontent {
+  .col-md-6:first-of-type {
+
+  }
+  .col-md-6 {
+    @include xxs {
+      padding: 0;
+    }
+    @include md {
+      padding-left: 0;
+      padding-right: 15px;
+    }
+  }
+  .contentheight {
+    min-height: 500px;
+  }
+  .content--wrapper {
+    @include xxs {
+      background: #5e6f79;
+      padding: 30px;
+      color: #fff;
+      height: 100%;
+    }
+    @include md {
+      padding: 50px;
+    }
+    button {
+      text-transform: uppercase;
+      border-radius: 0;
+      font-weight: 700;
+      color: #5e6f79;
+    }
+    ul {
+    list-style-type: none;
+    }
+
+    ul > li {
+      counter-increment: customlistcounter;
+      clear: both;
+    }
+
+    ul > li:last-of-type {
+      margin-bottom: 50px;
+    }
+
+    ul > li:before {
+      content: counter(customlistcounter) " ";
+      font-weight: bold;
+      float: left;
+      width: 1em;
+      margin-right: 25px;
+      font-size: 50px
+    }
+
+    ul > li p {
+      float: left;
+      margin-top: 25px;
+      width: 70%;
+    }
+
+    ul:first-child {
+      counter-reset: customlistcounter;
+    }
+  }
+  ul {
+  list-style-type: none;
+  margin-left: 0;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  margin: 50px 0;
+  padding: 70px 0
+  }
+}
+
+.testimonials {
+  margin-top: 20px;
+  text-align: center;
+  .view-team {
+    margin-bottom: 15px;
+    .vert-align {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 100%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+  }
+  .col-md-6:first-of-type {
+    @include xxs {
+      padding: 0;
+    }
+    @include md {
+      padding-left: 0;
+      padding-right: 15px;
+    }
+  }
+  .vert-align {
+    @include md {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 100%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+  ul.quotes {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  li.quote:before {
+    display: block;
+    content: "";
+    width: 39px;
+    height: 50px;
+    background: url('images/open_quotes.png') no-repeat;
+  }
+  li.quote:after {
+    display: block;
+    content: "";
+    float: right;
+    width: 39px;
+    height: 29px;
+    background: url('images/close_quotes.png') no-repeat;
+  }
+  li.quote h1 {
+    font-family: $font__main;
+    font-size: 22px;
+    text-transform: none;
+    margin-top: 0;
+  }
+  a {
+    color: #fff;
+  }
+  a:hover {
+    color: #c6cbcd;
+    text-decoration: none;
+  }
+  .services-page-footer {
+    min-height: 250px;
+  }
+  .view-team {
+    background: #456382;
+    h1 {
+      font-weight: 600;
+    }
+  }
+  .testimonials-wrapper {
+    background: #cdd1d3;
+    height: 100%;
+    padding: 80px
+  }
+}
+.page-id-152 .view-team {
+  background-color: #a54b47;
+}
+
+//search page
+.search-result .col-sm-4 {
+  margin-bottom: 15px;
+  padding-left: 7.5px;
+}
+
+.search-result .col-sm-4:nth-child(even) article {
+  background: #53646e;
+  color: #fff;
+  height: 100%;
+  padding: 15px;
+  a {
+    color: #fff;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #bfc4c6;
+  }
+}
+
+.search-result .col-sm-4:nth-child(odd) article  {
+  background: #bfc4c6;
+  height: 100%;
+  padding: 15px;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #131e3d;
+  }
+}
+
+.nav-links {
+  clear: both;
+}

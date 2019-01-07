@@ -1,0 +1,41 @@
+footer {
+  background: #2a2a2b;
+  padding: 45px 5px;
+  color: #fff;
+  width: 100%;
+  font-weight: 300;
+  clear: both;
+  text-transform: uppercase;
+  a {
+    color: #fff
+  }
+  a:active {
+    color: #fff
+  }
+  a:visited {
+    color: #fff
+  }
+  a:hover {
+    background: #fff;
+    color: #000;
+  }
+  .copyright {
+    text-transform: none;
+    @include xxs {
+      text-align: center;
+    }
+    @include lg {
+      text-align: left;
+    }
+  }
+  .byline  {
+    text-transform: none;
+    @include xxs {
+      text-align: center;
+    }
+    @include lg {
+      text-align: right;
+    }
+
+  }
+}
