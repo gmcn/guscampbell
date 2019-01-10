@@ -1486,16 +1486,22 @@ footer {
 
 .servicebox {
   margin-bottom: 20px; }
-  .servicebox .vert-align {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    width: 100%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%); }
+  .servicebox a {
+    font-weight: 700;
+    transition: .5s; }
+  .servicebox a:hover {
+    text-decoration: none; }
+  @media screen and (min-width: 1441px) {
+    .servicebox .vert-align {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 100%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); } }
   .servicebox .row {
     background: #c6cbcd;
     color: #fff; }
@@ -1514,7 +1520,10 @@ footer {
     color: #fff; }
   .servicebox .servicecontentheight {
     position: relative;
-    min-height: 350px; }
+    min-height: 350px;
+    padding: 20px 0; }
+  .servicebox .servicecontentheight:last-of-type {
+    padding: 0; }
 
 .icon-wrapper {
   position: absolute;

@@ -27,6 +27,7 @@ $service_icon = get_field('service_icon');
         <div class="vert-align">
           <h1><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
             <?php the_excerpt(); ?>
+            <p><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read More ></a></p>
         </div>
       </div><!-- /.col-md-6 -->
 
