@@ -44,6 +44,14 @@ $acf_pr_email_addr= get_field( 'acf_pr_email_addr' );
 					Telephone:<br  /><span><?php echo $acf_main_tel_no ?></span><br  />
 					<?php endif; ?>
 
+          <?php if($acf_mobile_no) : ?>
+						DX Number:<br  /><span><?php echo $acf_mobile_no ?></span><br  />
+					<?php endif; ?>
+
+          <?php if($acf_fax_no) :  ?>
+						Fax:<br  /><span><?php echo $acf_fax_no ?></span><br  />
+					<?php endif; ?>
+
 					<?php if($acf_pr_email_addr != ""):  ?>
 						Email:<br  /><span><a href="mailto:<?php echo $acf_pr_email_addr ?>"><?php echo $acf_pr_email_addr ?></a></span><br  />
 					<?php endif; ?>
