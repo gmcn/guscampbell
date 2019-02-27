@@ -19,6 +19,6 @@
 
 /* SITE */
 
-  Last update:28/02/18
+  Site Live: 21/02/19
   Doctype:HTML5
   IDE: Atom, FileZilla, Adobe XD, Wordpress, Bootstrap, SASS

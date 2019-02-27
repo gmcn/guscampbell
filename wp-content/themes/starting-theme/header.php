@@ -12,11 +12,20 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135032279-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135032279-1');
+</script>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<link type="text/plain" rel="author" href="<?php echo get_template_directory_uri(); ?>/humans.txt" />
-<link type="text/plain" rel="author" href="<?php echo get_template_directory_uri(); ?>/robots.txt" />
+<link type="text/plain" rel="author" href="/humans.txt" />
+<link type="text/plain" rel="robots" href="/robots.txt" />
 <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.png">
 <?php wp_head(); ?>
 <?php $description = get_bloginfo( 'description', 'display' ); ?>
