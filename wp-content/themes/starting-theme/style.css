@@ -1051,9 +1051,8 @@ footer {
     font-family: "Open Sans", sans-serif;
     text-transform: none;
     font-size: 22px;
-    font-weight: 500; }
-  .intro-container p {
-    text-align: justify; }
+    font-weight: 500;
+    line-height: 1.3em; }
 
 @media screen and (min-width: 320px) {
   .pagecontent .col-md-6 {
@@ -1064,6 +1063,8 @@ footer {
     padding-right: 15px; } }
 .pagecontent .contentheight {
   min-height: 500px; }
+.pagecontent .content--wrapper p {
+  line-height: 1.75em; }
 @media screen and (min-width: 320px) {
   .pagecontent .content--wrapper {
     background: #5e6f79;
