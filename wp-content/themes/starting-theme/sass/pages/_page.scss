@@ -40,9 +40,10 @@
     text-transform: none;
     font-size: 22px;
     font-weight: 500;
+    line-height: 1.3em;
   }
   p {
-    text-align: justify;
+    // text-align: justify;
   }
 }
 
@@ -63,6 +64,9 @@
     min-height: 500px;
   }
   .content--wrapper {
+    p {
+      line-height: 1.75em;
+    }
     @include xxs {
       background: #5e6f79;
       padding: 30px;
